@@ -151,14 +151,14 @@ npm run build:mp-weixin
 
 至此完成「uni-app → APK」全流程。
 
-
-
 ## 脚本一览
 
 | 命令 | 作用 |
 | --- | --- |
-| `npm run dev:h5` | H5 开发服务（热更新） |
-| `npm run build:h5` | H5 生产构建 |
-| `npm run dev:mp-weixin` | 微信小程序开发服务 |
-| `npm run build:mp-weixin` | 微信小程序构建 |
-| `npm run dev:app` / `build:app` | App 端开发/构建（产物给离线打包用，云打包场景在 HBuilderX 内操作即可） |
+| npm run dev:h5 | H5 开发服务（热更新，浏览器访问 `http://localhost:5173`） |
+| npm run build:h5 | H5 生产构建 |
+| npm run dev:mp-weixin | 微信小程序**监听编译**（保持运行，配合微信开发者工具导入 `dist/dev/mp-weixin` 调试） |
+| npm run build:mp-weixin | 微信小程序一次性构建（开发者工具「上传」审核时用这个） |
+| npm run dev:app | App 端**监听编译**（改码自动重编，资源供离线打包/调试引用） |
+| npm run build:app | App 端一次性构建，**产物是 JS/CSS 资源包，不是 apk**；<br/>apk 仍需 HBuilderX 云打包或离线 Gradle 套壳（见第三章） |
+

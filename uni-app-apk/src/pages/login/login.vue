@@ -27,6 +27,7 @@
           v-model="password"
           class="form-input"
           type="password"
+          :password="true"
           placeholder="请输入密码"
           placeholder-class="placeholder"
         />
@@ -49,8 +50,6 @@
       <view class="agreement" @click="onStub('用户协议')">
         <text class="agreement-text">登录即代表同意《用户协议》和《隐私政策》</text>
       </view>
-
-      <view class="login-tip">演示账号：admin / 123456</view>
     </view>
   </view>
 </template>
@@ -118,7 +117,12 @@ export default {
 $brand: #00a394;
 
 .login-page {
+  box-sizing: border-box;
   min-height: 100vh;
+  /* #ifdef H5 */
+  /* H5 顶部有 44px 导航栏，100vh 会溢出产生竖向滚动条 */
+  min-height: calc(100vh - var(--window-top, 0px) - var(--window-bottom, 0px));
+  /* #endif */
   background: linear-gradient(180deg, #35d3b6 0%, #00b4e6 42%, #fff 42%, #fff 100%);
   padding-bottom: 60rpx;
 }
@@ -281,12 +285,5 @@ $brand: #00a394;
 .agreement-text {
   font-size: 22rpx;
   color: #9aa5b1;
-}
-
-.login-tip {
-  margin-top: 26rpx;
-  font-size: 24rpx;
-  color: #b0b6c3;
-  text-align: center;
 }
 </style>
