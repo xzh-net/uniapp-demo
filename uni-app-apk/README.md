@@ -114,6 +114,11 @@ npm run build:mp-weixin
 ![运行](doc/assets/debug1.png)
 ![启动](doc/assets/debug2.png)
 
+![登录](doc/assets/app1.png)
+![首页](doc/assets/app2.png)
+![分类](doc/assets/app3.png)
+![我的](doc/assets/app4.png)
+
 ### 4. 云打包出 APK
 
 1. 菜单：**发行 → 原生 App-云打包**
