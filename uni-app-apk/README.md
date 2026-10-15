@@ -84,8 +84,10 @@ npm run dev:h5
 # 编译 H5 产物 → dist/build/h5
 npm run build:h5
 
-# 编译各小程序平台产物（如微信）
+# 编译各小程序平台产物（如微信），产物 → dist/build/mp-weixin，打开微信开发者工具 → 导入项目 → 选择目录，填写 AppID 点确定 
 npm run build:mp-weixin
+
+# 如果使用 HBuilderX 启动， 首次运行需在 HBuilderX 中配置微信开发者工具的安装路径（设置 → 运行配置 → 小程序运行配置），编译完成后会自动拉起微信开发者工具并加载项目
 ```
 
 本 demo 的 APK 产出走 HBuilderX 云打包，不需要命令行直接产出 apk。
