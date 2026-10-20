@@ -1,4 +1,4 @@
-# demo
+# uniapp-demo
 
 ## 1. 基础功能
 
