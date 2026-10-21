@@ -1,4 +1,4 @@
-# uni-app-apk
+# uni-app 打包 Android APK
 
 一个学习 uni-app 编写页面 → 编译 → 打出安卓 APK 完整流程的教学 demo。
 

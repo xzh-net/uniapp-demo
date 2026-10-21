@@ -1,5 +1,5 @@
 # uniapp-demo
 
-## 1. 基础功能
+## 1. 快速入门
 
-- [uni-app-apk](uni-app-apk) — 用 Vue 一套代码快速产出 Android APK，验证壳工程、WebView 渲染与原生能力桥接
+- [uni-app 打包 Android APK](uni-app-apk) — uni-app（Vue3+Vite）教学 demo：登录拦截与自绘 tabBar，HBuilderX 云打包 Android APK 完整流程
